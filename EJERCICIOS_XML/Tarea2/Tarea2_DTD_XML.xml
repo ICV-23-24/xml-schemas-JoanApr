@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE listado [
+    <!ELEMENT listado (afiliado+)>
+    <!ELEMENT afiliado (DNIoNIE , nombre, apellidos ,fechaNacimiento , situacionLaboral,listadoBaja* , listadoPrestaciones* )>
+
+    <!ELEMENT DNIoNIE (#PCDATA)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT apellidos (#PCDATA)>
+
+    <!ELEMENT situacionLaboral (en_paro |laboral|en_activo | edad_no_laboral)>
+
+    <!ELEMENT en_paro (#PCDATA) >
+    <!ELEMENT laboral (#PCDATA)>
+    <!ELEMENT en_activo (#PCDATA)>
+    <!ELEMENT edad_no_laboral (#PCDATA)>
+
+    <!ELEMENT fechaNacimiento (dia,mes,año)>
+    <!ELEMENT dia (#PCDATA)>
+    <!ELEMENT mes (#PCDATA)>
+    <!ELEMENT año (#PCDATA)>
+
+
+    <!ELEMENT listadoBajas (listadoBaja*)>
+
+    <!ELEMENT listadoBaja (causa,fechaInicio,fechaFinal?)>
+
+    <!ELEMENT causa (#PCDATA)>
+    <!ELEMENT fechaInicio (#PCDATA)>
+    <!ELEMENT fechaFinal (#PCDATA)>
+
+    <!ELEMENT listadoPrestaciones (cantidadPercibida,fechainicio,fechafinal)>
+
+    <!ELEMENT cantidadPercibida (#PCDATA)>
+    <!ELEMENT fechainicio (#PCDATA)>
+    <!ELEMENT fechafinal (#PCDATA)>
+
+
+
+]>
+
+
+<listado>
+    <afiliado>
+        <DNIoNIE>45678934L</DNIoNIE>
+
+        <nombre>Juan</nombre>
+
+        <apellidos>Martinez Segovia</apellidos>
+
+        <fechaNacimiento>
+            <dia>28</dia>
+            <mes>Julio</mes>
+            <año>2002</año>
+        </fechaNacimiento>
+        <situacionLaboral>
+            <en_activo>Activo</en_activo>
+
+        </situacionLaboral>
+
+        <listadoBaja>
+            <causa>Caida de toro electrico</causa>
+            <fechaInicio>12/01/2024</fechaInicio>
+        </listadoBaja>
+        <listadoBaja>
+            <causa>Rotura de hombro</causa>
+            <fechaInicio>12/01/2023</fechaInicio>
+        </listadoBaja>
+
+        <listadoPrestaciones>
+            <cantidadPercibida>2500€</cantidadPercibida>
+            <fechainicio>13/01/2024</fechainicio>
+            <fechafinal>29/03/2024</fechafinal>
+        </listadoPrestaciones>
+
+
+    </afiliado>
+</listado>

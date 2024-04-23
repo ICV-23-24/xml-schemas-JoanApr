@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<listaventas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:noNamespaceSchemaLocation="Tarea1_xsd.xsd">
+
+    <venta>
+        <importe>3800€</importe>
+        <comprador>Esteban</comprador>
+        <vendedor>Armeria Ravell</vendedor>
+        <fecha>02/04/2023</fecha>
+        <codigoFactura>RL8291</codigoFactura>
+    </venta>
+    
+  
+</listaventas>

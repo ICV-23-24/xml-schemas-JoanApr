@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+   
+    <xsd:element name="cliente">
+        <xsd:complexType>
+            <xsd:simpleContent>
+                <xsd:extension base="xsd:string">
+                   
+                    <xsd:attribute name="codigo" type="codigoCliente"/>
+                  
+                    <xsd:attribute name="habitual" type="xsd:boolean"/>
+                   
+                    <xsd:attribute name="cantidad" type="xsd:integer"/>
+                </xsd:extension>
+            </xsd:simpleContent>
+        </xsd:complexType>
+    </xsd:element>
+
+    
+    <xsd:simpleType name="codigoCliente">
+        <xsd:restriction base="xsd:string">
+            <xsd:pattern value="[A-Z]{3}[0-9]{3}"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+</xsd:schema>

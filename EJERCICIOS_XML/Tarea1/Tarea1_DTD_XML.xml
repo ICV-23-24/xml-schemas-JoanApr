@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE listaventas[
+                <!ELEMENT listaventas (venta+)>
+                <!ELEMENT venta (importe ,comprador , vendedor , fecha? , codigoFactura)>
+                
+                <!ELEMENT importe (#PCDATA)>
+                <!ELEMENT comprador (#PCDATA)>
+                <!ELEMENT vendedor (#PCDATA)>
+                <!ELEMENT fecha (#PCDATA)>
+                <!ELEMENT codigoFactura (#PCDATA)>
+
+                
+
+
+
+
+]>
+
+
+<listaventas>
+    <venta>
+        <importe>3800€</importe>
+        <comprador>Esteban</comprador>
+        <vendedor>Armeria Ravell</vendedor>
+        <fecha>02/04/2023</fecha>
+        <codigoFactura>RL8291</codigoFactura>
+    </venta>
+    <venta>
+        <importe>2650€€</importe>
+        <comprador>Guillermo</comprador>
+        <vendedor>Armeria Ravell</vendedor>
+        <codigoFactura>RL6455</codigoFactura>
+    </venta>
+
+
+</listaventas>
