@@ -1,3 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<situacionLaboral xmlns:xsi="http://www.w3.org/2001/XMLSchema"
-    xsi:noNamespaceSchemaLocation="Tarea2.xsd"></situacionLaboral>
+<afiliado xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="Tarea2.xsd">
+
+    <DNI_NIE>45678934L</DNI_NIE>
+    <nombre>Juan</nombre>
+    <apellidos>Martinez Segovia</apellidos>
+    <fechaNacimiento>
+        <dia>28</dia>
+        <mes>Julio</mes>
+        <año>2002</año>
+    </fechaNacimiento>
+    <situacionLaboral>
+        <en_paro>en paro</en_paro>
+        <laboral>no</laboral>
+        <en_activo>no_activo</en_activo>
+        <edad_no_laboral>no</edad_no_laboral>
+    </situacionLaboral>
+    <listadoBaja>
+        <causa>Caida de toro electrico</causa>
+        <fechaInicio>12/01/2024</fechaInicio>
+        <fechaFinal>20/01/2024</fechaFinal>
+    </listadoBaja>
+  
+    <listadoprestaciones>
+        <cantidadPercibida>2500</cantidadPercibida>
+        <fechainicio>13/01/2024</fechainicio>
+        <fechafinal>29/03/2024</fechafinal>
+    </listadoprestaciones>
+
+</afiliado>
